@@ -26,7 +26,6 @@ header{
 nav ul {
 	list-style-type: none;
 	display: flex;
-	align-items: row;
 	justify-content: flex-end;
 	align-content: space-around;
 }
@@ -984,7 +983,7 @@ aside
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
-	border-radius: none;
+	border-radius: 0px;
 }
 
 
