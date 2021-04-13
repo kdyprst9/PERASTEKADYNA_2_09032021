@@ -7,7 +7,7 @@
 #bloc_page {
 	width: 1140px ;
 	margin-top: 20px;
-	margin-left: 140px;
+	margin-left: 130px;
 	font-family: "Raleway";
 	
 }
@@ -277,7 +277,7 @@ p
 
 
 figure:hover img {
-	opacity: .5;
+	opacity: .9;
 }
 
 #hotels img
@@ -543,6 +543,7 @@ footer a
 {
 	width: auto;
 	margin-left: 10px;
+	margin-right: -30px;
 }
 
 p 
@@ -613,7 +614,7 @@ label
 #article1
 {
 	width: auto;
-	height: 800px;
+	height: 580px;
 	border: 1px solid #F2F2F2;
 	background-color: #F2F2F2;
 	padding-left: 25px;
@@ -646,7 +647,7 @@ label
 .afficher
 {
 	position: relative;
-	top: 280px;
+	top: 55px;
 }
 
 aside
@@ -684,7 +685,8 @@ aside
 
 #ActivityMars
 {
-	margin-top: 25px;
+	margin-top: 35px;
+	margin-left: 40px;
 	display:flex;
 	flex-wrap: wrap ;
 	flex-direction: row;
@@ -708,7 +710,7 @@ aside
 #article2 figure
 {
 
-	margin-left: 0px ;
+	margin-left: 10px ;
 	margin-right: 30px;
 	
 }
@@ -729,7 +731,7 @@ aside
 #Footer
 {	
 	width: 1200px;
-	height: 250px;
+	height: 230px;
 	
 }
 
@@ -786,7 +788,7 @@ aside
 	
 	.logo {
 		position: relative;
-		left: 55px;
+		left: 60px;
 		bottom: 84px;
 		width: 95px;
 		height:43px;
@@ -840,7 +842,7 @@ aside
 	.inscription
 	{
 		position: relative;
-		right: 35px;
+		right: 30px;
 		bottom: 25px;
 	}
 
@@ -866,14 +868,14 @@ aside
 
 	#search 
 	{
-		width: 45px;
-		height: 47px;
+		width: 49px;
+		height: 49px;
 		border: 1px solid #0065FC;
 		background-color: #0065FC;
 		color: white;
 		font-size: 0;
 		font-weight: bold;
-		border-radius: 12px;
+		border-radius: 11px;
 		position: relative;
 		top: -6px;
 		left: 227px;
@@ -884,8 +886,8 @@ aside
 	{
 		color: white;
 		position: relative;
-		left: 290.5px;
-		bottom: 39px;
+		left: 292px;
+		bottom: 40px;
 		font-size: 17px;
 
 	}
@@ -943,7 +945,7 @@ aside
  	{
  		position:absolute;
  		left: 185px;
- 		top: 418px;
+ 		top: 420px;
  		padding-left: 3px;
  		width: 17px;
 
@@ -979,6 +981,7 @@ aside
 		border: none;
 	}
 	
+
 	section {
 	display: flex;
 	justify-content: space-between;
@@ -1009,7 +1012,7 @@ aside
 		width: 325px;
 		height: 139px;
 		border-radius: 21px;
-		margin-bottom: 0px;
+		margin-bottom: 15px;
 		margin-right: 35px;
 	}
 
@@ -1052,7 +1055,7 @@ aside
 		width: 335px;
 		height: 185px;
 		border-radius: 23px;
-		margin-bottom: 0px;
+		margin-bottom: 15px;
 
 	}
 
@@ -1062,6 +1065,7 @@ aside
 		height: 110px ;
 		border-top-left-radius: 23px;
 		border-top-right-radius:23px;
+		
 	}
 
 	#hotels h1
@@ -1104,7 +1108,7 @@ aside
 	.afficher 
 	{
 		position: relative;
-		top: 870px;
+		top: 930px;
 		right: 4px;
 		font-size: 18px;
 	}
@@ -1113,7 +1117,8 @@ aside
 	#article2 h1 
 	{
 		margin-left: 25px;
-		margin-top: -40px;
+		margin-top: 230px;
+		margin-bottom: -8px;
 	}
 	#ActivityMars
 	{
@@ -1121,7 +1126,7 @@ aside
 		display: flex;
 		flex-wrap: nowrap;
 		justify-content: flex-start;
-		margin-top: 33px;
+		margin-top: 30px;
 	}
 
 	#DameEtParc , #FortEtFrioul
@@ -1132,9 +1137,9 @@ aside
 
 	#ActivityMars figure 
 	{
-		width: 350px;
+		width: 345px;
 		height: 187px;
-		margin-left: 30px;
+		margin-left: -10px;
 	}
 
 	#ActivityMars h4
@@ -1144,7 +1149,7 @@ aside
 
 	#ActivityMars img 
 	{
-		width: 350px;
+		width: 345px;
 		height: 130px ;
 	}
 
