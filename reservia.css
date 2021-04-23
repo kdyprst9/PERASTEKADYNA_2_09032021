@@ -609,6 +609,7 @@ h4
 nav li 
 {
 	font-size: 15px;
+	margin-right: 0px;
 }
 
 
@@ -648,6 +649,7 @@ label
 	background-color: #F2F2F2;
 	padding-left: 25px;
 	border-radius: 20px;
+	margin-right: 0px;
 	
 }
 
@@ -688,7 +690,7 @@ aside
 {
 
 	margin-top: 30px;
-	margin-right: 18px;
+	margin-right: 0px;
 	padding-bottom: 30px;
 	width: 100%;
 	
@@ -750,6 +752,7 @@ aside
 {
 	margin-top: 35px;
 	margin-bottom: 60px;
+	margin-left: 30px;
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -778,7 +781,7 @@ aside
 #Fort 
 {
 	width: 57%;
-	margin-right: 27px;
+	margin-right: 30px;
 }
 
 #Frioul
@@ -806,9 +809,9 @@ aside
 
 #article2 img 
 {
-	
 	height: 130px ;
 }
+
 
 #article2 figure
 {
@@ -909,12 +912,13 @@ aside
 		width: 100%;
 		height: auto;
 		justify-content: center;
+		margin-left: 15px;
 	}
 
 	#Calanques, #VieuxPort 
 	{
 		width: 55%;
-		margin-left: 5px;
+		margin-left: 10px;
 		
 	}
 
@@ -980,6 +984,7 @@ aside
 		bottom: 84px;
 		width: 95px;
 		height:43px;
+		width: auto;
 	}
 	
 	nav ul {
@@ -1110,7 +1115,8 @@ aside
 
 	#formul
 	{
-		width: 319px;
+		width: 330px;
+		height: auto;
 	}
 
 	#formul input
@@ -1131,35 +1137,25 @@ aside
 
 	#formul i:nth-child(4)
  	{
- 		position:absolute;
- 		left: 185px;
- 		top: 420px;
+ 		left: 165px;
+ 		top: 408px;
  		padding-left: 3px;
  		width: 17px;
+		display: flex;
 
  	}
 
 
 	#formul input
 	{	
-	width: 155px;
+	width: auto;
 	height: 43px;
 	font-size: 14px;
 	text-align: right;
 	padding-right: 16px;
 	margin-right: 10px;
+	padding-left: 50px;
 	
-	}
-
-
-	#formul input:nth-child(5) {
-		width: 117px;
-	}
-	
-	#formul input:last-child
-	{
-		width: 195px; 
-		
 	}
 
 
@@ -1175,7 +1171,8 @@ aside
 	justify-content: space-between;
 	flex-wrap: wrap-reverse;
 	border-radius: 0px;
-}
+	max-width: 480px;
+	}
 
 
 	.populaires i
@@ -1192,13 +1189,17 @@ aside
 	aside 
 	{
 		border-radius: 0px;
-		margin: -30px;
+		display: flex;
+		flex-wrap: wrap ;
+		height: auto;
+		flex-direction: column;
+		width: 100%;
 	}
 
 	#hotels2 figure 
 	{
-		width: 325px;
-		height: 139px;
+		min-width: 75%;
+		height: 135px;
 		border-radius: 21px;
 		margin-bottom: 15px;
 		margin-right: 35px;
@@ -1208,14 +1209,13 @@ aside
 	#hotels2 img
 	{
 		width: 120px ;
-		height: 139px;
+		height: 135px;
 		border-top-left-radius: 21px;
 		border-bottom-left-radius: 21px;
 	}
 
 	#hotels2 h4
 	{
-		width: 160px;
 		padding-top: 5px;
 		margin-bottom: 15px;
 	}
@@ -1238,10 +1238,17 @@ aside
 
 	}
 
+	#hotels {
+		display: flex;
+		flex-direction: column;
+		max-width: auto;
+		max-width: 100%;
+	}
+
 	#hotels figure 
 	{
-		width: 335px;
-		height: 185px;
+		min-width: 120%;
+		height: auto;
 		border-radius: 23px;
 		margin-bottom: 15px;
 
@@ -1249,8 +1256,9 @@ aside
 
 	#hotels img 
 	{
-		width: 335px;
-		height: 110px ;
+	
+		min-width: 100%;
+		height: 130px;
 		border-top-left-radius: 23px;
 		border-top-right-radius:23px;
 		
@@ -1288,16 +1296,11 @@ aside
 		margin-top: 40px;
 	}
 
-	#article2
-	{
-		margin-top: 670px;
-	}
 
 	.afficher 
 	{
-		position: relative;
-		top: 930px;
-		right: 4px;
+		margin-top: 5px;
+		margin-left: 0px;
 		font-size: 18px;
 	}
 
@@ -1305,29 +1308,38 @@ aside
 	#article2 h2 
 	{
 		margin-left: 25px;
-		margin-top: 230px;
 		margin-bottom: -8px;
 	}
+
 	#ActivityMars
 	{
 		flex-direction: column;
 		display: flex;
-		flex-wrap: nowrap;
+		flex-wrap: nowrap ;
 		justify-content: flex-start;
 		margin-top: 30px;
+		min-width: 350px;
 	}
 
 	#DameEtParc , #FortEtFrioul
 	{
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 180%;
+	}
+
+	#Calanques , #VieuxPort
+	{
+		min-width: 100% ;
 	}
 
 	#ActivityMars figure 
 	{
-		width: 345px;
+		min-width: 100%;
 		height: 187px;
-		margin-left: -10px;
+		margin-left: 0px;
 	}
 
 	#ActivityMars h4
@@ -1337,7 +1349,7 @@ aside
 
 	#ActivityMars img 
 	{
-		width: 345px;
+		min-width: 100%;
 		height: 130px ;
 	}
 
@@ -1345,7 +1357,7 @@ aside
 	{
 		display: flex;
 		flex-direction: column;
-		width: 650px;
+		margin-top: 1000px;
 		height: auto;
 		padding-bottom: 50px;
 		
