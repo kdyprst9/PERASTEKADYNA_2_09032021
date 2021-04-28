@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="reservia.css">
+	<link rel="stylesheet" type="text/css" href="media-queries.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
@@ -25,9 +26,9 @@
 			<nav>
 
 				<ul>
-					<li><a href="#Hébergements" class="hebergements">Hébergements</a></li>
-					<li><a href="#Activités" class="activites">Activités</a></li>
-					<li><a href="#" class="inscription">S'inscrire</a></li>
+					<li><a href="#Hébergements" id="hebergements">Hébergements</a></li>
+					<li><a href="#Activités" id="activites">Activités</a></li>
+					<li><a href="#" id="inscription">S'inscrire</a></li>
 				</ul>
 
 			</nav>
@@ -39,7 +40,7 @@
 
 
 
-		<form method="post" action="#">
+		<form>
 			<div id="formulaire1">
 				<a href="#"><i class="fas fa-map-marker-alt"></i></a><input type="text" placeholder="Marseille, France"
 					name="recherche">
@@ -93,7 +94,7 @@
 						<div class="etoiles1">
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
 								class="fas fa-star"></i>
-							<span id="greystarCan"><i class="fas fa-star"></i></span>
+							<span class="GreyStars"><i class="fas fa-star"></i></span>
 						</div>
 					</figure>
 					<figure>
@@ -118,7 +119,7 @@
 						<div class="etoiles1">
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
 								class="fas fa-star"></i>
-							<span id="greystarBird"><i class="fas fa-star"></i></span>
+							<span class="GreyStars"><i class="fas fa-star"></i></span>
 						</div>
 
 					</figure>
@@ -134,7 +135,7 @@
 						</a>
 						<div class="etoiles1">
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-							<span id="greystarMer"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+							<span class="GreyStars"><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
 						</div>
 
 					</figure>
@@ -149,7 +150,7 @@
 						<div class="etoiles1">
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
 								class="fas fa-star"></i>
-							<span id="greystarPanier"><i class="fas fa-star"></i></span>
+							<span class="GreyStars"><i class="fas fa-star"></i></span>
 						</div>
 
 					</figure>
@@ -218,7 +219,7 @@
 
 							<div class="etoiles2">
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-									class="fas fa-star"></i><span class="EtoileGrise"><i class="fas fa-star"></i></span>
+									class="fas fa-star"></i><span class="GreyStars"><i class="fas fa-star"></i></span>
 							</div>
 						</div>
 					</figure>
@@ -237,7 +238,7 @@
 
 							<div class="etoiles2">
 								<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-									class="fas fa-star"></i><span class="EtoileGrise"><i class="fas fa-star"></i></span>
+									class="fas fa-star"></i><span class="GreyStars"><i class="fas fa-star"></i></span>
 							</div>
 						</div>
 					</figure>
@@ -325,7 +326,7 @@
 		</section>
 
 		<footer id="Footer">
-			<div class="Propos">
+			<div id="Propos">
 				<h5>A propos</h5>
 
 				<a href="#">
@@ -340,7 +341,7 @@
 
 			</div>
 
-			<div class="Heberger">
+			<div id="Heberger">
 				<h5>Nos hébergements</h5>
 
 				<a href="#">
@@ -352,7 +353,7 @@
 
 			</div>
 
-			<div class="Assistance">
+			<div id="Assistance">
 				<h5>Assistance</h5>
 
 				<a href="#">
