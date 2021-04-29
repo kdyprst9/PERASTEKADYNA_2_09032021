@@ -1,19 +1,19 @@
-@media only screen and (max-device-width : 480px)	
+@media (max-device-width : 480px)	
 {
 	/* page wrapper */
 	#bloc_page 
 	{
-		width: auto;
+		max-width: 480px ;
 		justify-content: center;	
 	}
 	
 	h1 , h2
 	{
-		font-size: 21px ;
+		font-size: 21px;
 		font-weight: bold;
 	}
 	
-	p 
+	p
 	{
 		font-size: 14px;
 	}
@@ -27,24 +27,29 @@
 	header 
 	{
 		display: flex;
-		justify-content: center ;
+		justify-content: center;
+		max-width: 480px;
 	}
 	
-	.logo {
+	#logo
+	{
+		width: 100px;
 		position: relative;
-		left: 60px;
+		left: 70px;
 		bottom: 84px;
-		width: 95px;
-		height:43px;
 	}
 	
-	nav ul {
-		display: flex;
+	#nav ul {
 		flex-wrap: wrap;
 		margin-bottom: 70px;
 	}
+
+	#nav a:hover 
+	{
+		border-top: none;
+	}
 	
-	nav li
+	.nav_liste
 	{
 		margin-left: 50px;
 		margin-right: 20px;
@@ -57,24 +62,19 @@
 		padding-right: 95px;
 		padding-left: 90px;
 		position: relative;
-		right: 200px;
-		top: 75px;
-	}
-
-	#hebergements:hover 
-	{
-		border-top: none;
+		right: 220px;
+		top: 78px;
 	}
 
 	#activites
 	{
-		border-bottom: 2px solid lightgrey;
+		border-bottom: 2px solid #F2F2F2;
 		padding-bottom: 15px;
 		padding-right: 85px;
 		padding-left: 75px;
 		position: relative;
 		top: 58px;
-		left: 40px;
+		left: 50px;
 	}
 
 	#activites:hover
@@ -96,7 +96,8 @@
 	}
 
 	/* Recherche et filtres */
-	a i {
+
+	#map {
 		width: 23px;
 		height: 20px;
 		border-top-left-radius: 15px;
@@ -109,22 +110,20 @@
 	#search 
 	{
 		width: 49px;
-		height: 49px;
+		height: 48px;
 		font-size: 0;
 		border-radius: 11px;
 		top: -6px;
-		left: 227px;
-		
+		left: 227px;	
 	}
 	
-	.loupe 
+	#loupe 
 	{
 		color: white;
 		position: relative;
 		left: 292px;
 		bottom: 40px;
-		font-size: 17px;
-
+		font-size: 18px;
 	}
 
 	#search:hover
@@ -139,66 +138,52 @@
 		font-size: 15px;
 	}
 
-	label
+	#label
 	{
 		display: flex;
-		margin-bottom: 20px;
+		font-size: 16px;
+		margin-bottom: 15px;
 		margin-top: -20px;
+	}
+
+	.filtres
+	{
 		font-size: 15px;
+		height: 40px;
+		padding-left: 43px;
 	}
 
-	#formul
+	.filtres:nth-child(7)
 	{
-		height: auto;
-		width: 319px;
-	}
-
-	#formul input
-	{
+		display: flex;
+		padding-top: 10px;
+		margin-top: 10px;
 		margin-bottom: 10px;
-
 	}
 
+	#formul i:nth-child(6)
+	{
+		display: flex;
+		margin-top: 11px;
+	}
+	
 	#formul i
 	{
-	width: 25px;
-	height: 20px; 
-	font-size: 17px;
-	padding-top: 2px;
-	display: flex;
-	
-	}
-
-	#formul i:nth-child(4)
- 	{
- 		position: absolute;
- 		left: 175px;
- 		top: 355px;
- 		padding-left: 3px;
- 		width: 17px;
-
- 	}
-
-
-	#formul input
-	{	
-		width: 160px;
-		height: 60px;
+		border: 12px solid #DEEBFF;
 		font-size: 15px;
-		text-align: right;
-		padding-right: 16px;
-		margin-right: 10px;
-	
 	}
 
+	/* populaires */
 
-	#formul input:nth-child(5) {
-		width: 117px;
-	}
-	
-	#formul input:last-child
+	#hotels2
 	{
-		width: 195px; 
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.hotels_populaires
+	{
+		min-width: 90%;
 	}
 
 	/* Herbergements */
@@ -206,177 +191,42 @@
 	{
 		background-color: white;
 		border: none;
+		height: auto;
+		max-width: 480px;
 	}
 
-	section {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap-reverse;
-	border-radius: 0px;
-	}
-
-	/* populaires */
-	.populaires i
+	.hotels_hebergements
 	{
-		font-size: 20px;
-	}
-
-	.populaires 
-	{
-		margin-left: 30px;
-		margin-right: 30px;
+		width: 100%;
 	}
 
 	
-	aside 
-	{
-		border-radius: 0px;
-		margin: -30px;
-	}
-
-	#hotels2 figure 
-	{
-		width: 325px;
-		height: 139px;
-		border-radius: 21px;
-		margin-bottom: 15px;
-		margin-right: 35px;
-	}
-
-
-	#hotels2 img
-	{
-		width: 120px ;
-		height: 139px;
-		border-top-left-radius: 21px;
-		border-bottom-left-radius: 21px;
-	}
-
-	#hotels2 h4
-	{
-		width: 160px;
-		padding-top: 5px;
-		margin-bottom: 15px;
-	}
-
-
-	#hotels2 p 
-	{
-		margin-bottom: 24px;
-		width: 200px;
-
-	}
-	#BlocSoleil p 
-	{
-		padding-top: 10px;
-	}
 	
-	.etoiles2
-	{
-		font-size: 11px;
-
-	}
-
-	#hotels figure 
-	{
-		width: 335px;
-		height: 185px;
-		border-radius: 23px;
-		margin-bottom: 15px;
-
-	}
-
-	#hotels img 
-	{
-		width: 335px;
-		height: 110px ;
-		border-top-left-radius: 23px;
-		border-top-right-radius:23px;
-		
-	}
-
-	#hotels h2
-	{
-		margin-left: 10px;
-	}
-
-	#hotels h4 
-	{
-		margin-top: 4px;
-		margin-left: 4px;
-		margin-bottom: 14px;
-	}
-
-	#hotels p 
-	{
-		margin-left: 4px;
-		margin-bottom: 12px;
-		
-	}
-
-	.etoiles1 
-	{
-		font-size: 11px;
-		margin-left: 4px;
-	}
-
-	#article1 
-	{
-		margin-top: 40px;
-	}
-
-	#article2
-	{
-		margin-top: 670px;
-	}
-
-	.afficher 
-	{
-		position: relative;
-		top: 930px;
-		right: 4px;
-		font-size: 18px;
-	}
-
 	/* activites */
-	#article2 h2 
-	{
-		margin-left: 25px;
-		margin-top: 230px;
-		margin-bottom: -8px;
-	}
-
 	#ActivityMars
 	{
-		flex-direction: column;
-		display: flex;
-		flex-wrap: nowrap;
-		justify-content: flex-start;
-		margin-top: 30px;
+		flex-wrap: wrap;
 	}
 
-	#DameEtParc , #FortEtFrioul
+	.ActivityMars_img 
 	{
-	display: flex;
-	flex-direction: column;
+		height: 150px;
 	}
 
-	#ActivityMars figure 
+	.ActivityMars_grand
 	{
-		width: 345px;
-		height: 187px;
-		margin-left: -10px;
+		min-width: 90%;
+		height: 200px;
 	}
 
-	#ActivityMars h4
+	.ActivityMars_petitbloc
 	{
-		padding-top: 3px;
+		width: 100%;
 	}
-
-	#ActivityMars img 
+	.ActivityMars_petit
 	{
-		width: 345px;
-		height: 130px ;
+		width: 90%;
+		height: 200px;
 	}
 
 	/* footer */
@@ -384,49 +234,32 @@
 	{
 		display: flex;
 		flex-direction: column;
-		width: 650px;
+		max-width:480px ;
 		height: auto;
 		padding-bottom: 50px;
 		
 	}
 
 	#Footer p
-{
-	font-size: 16px;
-	margin-bottom: -5px;
-}
+	{
+		font-size: 15px;
+		margin-bottom: -5px;
+	}
 
-#Footer h5 
-{
-	font-size: 17.5px;
-	margin-bottom: 0px;
-}
+	#Footer h5 
+	{
+		font-size: 17.5px;
+		margin-bottom: 0px;
+	
+	}
 
-.Propos 
-{
-	margin-left: 230px;
-	margin-right: 0px;
-	font-size: 15px;
-	margin-bottom: 25px;
-}
-
-.Assistance
-{
-	margin-left: 230px;
-	margin-top: 0px;
-	font-size: 15px;
-	width: 200px;
-}
-
-.Heberger 
-{
-	margin-left: 230px;
-	font-size: 15px;
-	margin-bottom: 25px;
-}
+	.Footer_bloc
+	{
+		margin-bottom: 20px;
+		width: auto;
+	}
 
 }
-
 
 @media (min-width: 480px) and (max-width: 767px)
 {
@@ -436,17 +269,17 @@
 		width: auto;
 	}
 
-	/* header */
-	#activites , #hebergements , #inscription
-	{
-		font-size: 12px;
-	}
-
 	/* Recherche et filtres */
 
-	#formul input:nth-child(9)
+	.filtres
+	{
+		margin-right: 5px;
+	}
+
+	.filtres:nth-child(9)
 	{
 		display: flex;
+		padding-top: 7px;
 		margin-top: 10px;
 		margin-bottom: 10px;
 	}
@@ -454,44 +287,56 @@
 	#formul i:nth-child(8)
 	{
 		display: flex;
-		margin-top: 10px;
-	}
-
-	/* Herbergements */
-
-	#hotels figure {
-
-		min-width: 35%;
+		margin-top: 11px;
 	}
 
 	/* populaires */
 
 	#hotels2 {
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
-	#hotels2 figure 
+	.hotels_populaires 
 	{
 		min-width: 40%;
+	}
+
+
+	.hotels_hebergements
+	{
+		width: 35%;
 	}
 
 	/* activites */
 
 	#ActivityMars
 	{
-		width: auto;
 		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
 
-	#VieuxPort, #Calanques , #DameEtParc , #FortEtFrioul
+	.ActivityMars_grand
 	{
-	min-width: 80%;
+		max-width: 40%;
 	}
 
-	#DameEtParc , #FortEtFrioul
+	.ActivityMars_petitbloc
 	{
-		margin-left: -25px;
+		width: 50%;
+	}
+
+	#Calanques
+	{
+		margin-top: 35px;
+		margin-left: 3px;
+	}
+
+	#NotreDame
+	{
+		margin-top: 35px;
 	}
 
 	/* footer */
@@ -513,190 +358,115 @@
 
 /* page wrapper */
 
-#bloc_page 
-{
-	width: auto;
-	margin: auto;
-}
-
-p 
-{
-	font-size: 11.5px;
-}
-
-h1 
-{
-	font-size: 17px;
-}
-
-h2 
-{
-	font-size: 17px;
-}
-
-h4 
-{
-	font-size : 13px;
-}
-
-/* header */
-
-nav li 
-{
-	font-size: 14px;
-}
+	#bloc_page 
+	{
+		width: auto;
+		margin: auto;
+	}
 
 /* Recherche et filtres */
 
-label 
-{
-	margin-right: 10px;
-}
-#formul i
-{
+	#label 
+	{
+		margin-right: 10px;
+	}
+
+	#formul i
+	{
 	width: 14px;
 	height: 14px;
-}
+	}
 
 
-#formul input
-{	
-	height: 34px;
-	font-size: 12px;
+	.filtres
+	{		
 	margin-right: 5px;
-
-}
+	}
 
 /* Herbergements */
 
-#article1
-{
-	height: 100%;
-	padding-left: 25px;	
-}
+	#article1
+	{
+		height: 100%;
+		padding-left: 25px;	
+		padding-bottom: 20px;
+		width: 100%;
+	}
 
-section 
-{
-	flex-wrap: wrap ;
-}
+	#section
+	{
+		flex-wrap: wrap-reverse;
+	}
 
-#hotels figure 
-{
-	max-width: 25%;
-	min-width: 22%;
-	height: auto;
-	margin-right: 20px;
-}
+	.hotels_hebergements_img
+	{
+		height: 110px;
+	}
 
-#hotels img 
-{
-	height: 120px;
-}
+	.hotels_hebergements
+	{
+		height: 175px;
+		margin: 15px;
+	}
 
-.afficher
-{
-	position: relative;
-	top: 15px;
-	margin-bottom: 40px;
-}
+
 
 /* populaires */
 
-aside
-{
-	margin-top: 30px;
-	padding-bottom: 30px;
-	width: 100%;
-	margin-left: 0px;	
-}
+	#aside1
+	{
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding-left: 15px;
+		margin-left: 0px;
+		padding-bottom: 30px;
+		min-width: 90%;	
+	}
 
-#hotels2
-{
-	flex-direction: row;
-	justify-content: center;
-}
+	#hotels2
+	{
+		flex-direction: row;
+		justify-content: center;
+	}
 
-#hotels2 figure 
-{
-	width: 33%;
-	height: 120px;
-	margin: 20px;
-}
+	#hotels2 p
+	{
+		margin-bottom: -15px;
+	}
 
-#hotels2 p
-{
-	margin-bottom: -15px;
-}
+	#populaires
+	{
+		margin-left: 10px;
+	}
 
-#BlocSoleil h4 
-{
-	margin-bottom: 22px;
-}
+	.hotels_populaires
+	{
+		width: 29%;
+		height: 120px;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
 
-#BlocSoleil p 
-{
-	margin-bottom: -4px;
-}
-
-#BlocEau h4 , #BlocTout h4
-{
-	margin-bottom: -7px;
-}
-
-#hotels2 img 
-{
-	height: 120px;
-}
+	#hotels2 img 
+	{
+		height: 120px;
+	}
 
 /* activites */
-
-#ActivityMars
-{
-	flex-wrap: wrap;
-	justify-content: center;
-	height: auto;
-	margin-bottom: 30px;
-}
-
-#ActivityMars img
-{
-	height: 150px;
-}
-
-#Fort , #NotreDame 
-{
-	margin-right: 30px;
-}
-
-#Calanques 
-{
-	margin-left: 0px;
-}
-
-#VieuxPort, #Calanques
-{
-	width: 25%;
-}
-
-#Fort , #Parc
-{
-	width: 50%;
-}
-
-#DameEtParc , #FortEtFrioul
-{
-	flex-direction: row;
-	align-items: baseline;
-}
+	#ActivityMars
+	{
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
 
 /* footer */
 
-#Footer
-{	
-	max-width: 950px;
-	margin: auto;
-	height: auto;
-	padding-bottom: 30px;
-}
+	#Footer
+	{	
+		max-width: 960px;
+		margin: auto;
+		height: auto;
+		padding-bottom: 30px;
+	}
 
 }
