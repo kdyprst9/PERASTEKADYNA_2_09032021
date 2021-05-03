@@ -1,10 +1,12 @@
-@media (max-device-width : 480px)	
+@media screen and (max-device-width : 480px)	
 {
 	/* page wrapper */
 	#bloc_page 
 	{
-		max-width: 480px ;
-		justify-content: center;	
+		max-width: 480px;
+		justify-content: center;
+		padding-left: 10px;
+		padding-right: 10px;	
 	}
 	
 	h1 , h2
@@ -15,7 +17,7 @@
 	
 	p
 	{
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	h4 
@@ -35,8 +37,9 @@
 	{
 		width: 100px;
 		position: relative;
-		left: 70px;
+		left: 90px;
 		bottom: 84px;
+		
 	}
 	
 	#nav ul {
@@ -86,7 +89,7 @@
 	#inscription
 	{
 		position: relative;
-		left: 170px;
+		left: 150px;
 		bottom: 25px;
 	}
 
@@ -184,6 +187,17 @@
 	.hotels_populaires
 	{
 		min-width: 90%;
+		margin-bottom: 25px;
+	}
+
+	.hotels_populaires_img
+	{
+		width: 120px;
+	}
+
+	.bloc_hotels_populaires
+	{
+		width: 150px;
 	}
 
 	/* Herbergements */
@@ -197,10 +211,33 @@
 
 	.hotels_hebergements
 	{
-		width: 100%;
+		width: 90%;
+		margin-bottom: 25px;
 	}
 
-	
+	.hotels_hebergements_img
+	{
+		min-height: 120px;
+	}
+
+	.hotels_hebergements p
+	{
+		margin-top: -15px;
+	}
+
+	.etoiles1
+	{
+		font-size: 12px;
+		margin-top: -9px;
+	}
+
+	#afficher
+	{
+		font-size: 18px;
+		margin-left: 10px ;
+	}
+
+
 	
 	/* activites */
 	#ActivityMars
@@ -222,11 +259,19 @@
 	.ActivityMars_petitbloc
 	{
 		width: 100%;
+		margin-top: 35px;
+		margin-left: -17px;
+		margin-bottom: 35px;
 	}
 	.ActivityMars_petit
 	{
 		width: 90%;
 		height: 200px;
+	}
+
+	#Calanques
+	{
+		margin-left: 0px;
 	}
 
 	/* footer */
@@ -299,13 +344,7 @@
 
 	.hotels_populaires 
 	{
-		min-width: 40%;
-	}
-
-
-	.hotels_hebergements
-	{
-		width: 35%;
+		width: 40%;
 	}
 
 	/* activites */
@@ -388,14 +427,7 @@
 	#article1
 	{
 		height: 100%;
-		padding-left: 25px;	
-		padding-bottom: 20px;
 		width: 100%;
-	}
-
-	#section
-	{
-		flex-wrap: wrap-reverse;
 	}
 
 	.hotels_hebergements_img
@@ -405,10 +437,8 @@
 
 	.hotels_hebergements
 	{
-		height: 175px;
-		margin: 15px;
+		height: 190px;
 	}
-
 
 
 /* populaires */
@@ -441,7 +471,6 @@
 
 	.hotels_populaires
 	{
-		width: 29%;
 		height: 120px;
 		margin-right: 20px;
 		margin-top: 10px;
@@ -457,6 +486,12 @@
 	{
 		margin-bottom: 30px;
 		margin-top: 30px;
+		justify-content: center;
+	}
+
+	.ActivityMars_petit
+	{
+		margin-right: 0px;
 	}
 
 /* footer */
