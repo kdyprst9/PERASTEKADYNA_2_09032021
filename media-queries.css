@@ -4,14 +4,12 @@
 	#bloc_page 
 	{
 		max-width: 480px;
-		justify-content: center;
-		padding-left: 10px;
-		padding-right: 10px;	
+		justify-content: center;	
 	}
 	
 	h1 , h2
 	{
-		font-size: 21px;
+		font-size: 23px;
 		font-weight: bold;
 	}
 	
@@ -37,7 +35,7 @@
 	{
 		width: 100px;
 		position: relative;
-		left: 90px;
+		left: 60px;
 		bottom: 84px;
 		
 	}
@@ -62,10 +60,10 @@
 	#hebergements {
 		border-bottom: 2px solid #0065FC;
 		padding-bottom:15px;
-		padding-right: 95px;
-		padding-left: 90px;
+		padding-right: 70px;
+		padding-left: 55px;
 		position: relative;
-		right: 220px;
+		right: 225px;
 		top: 78px;
 	}
 
@@ -74,10 +72,10 @@
 		border-bottom: 2px solid #F2F2F2;
 		padding-bottom: 15px;
 		padding-right: 85px;
-		padding-left: 75px;
+		padding-left: 80px;
 		position: relative;
 		top: 58px;
-		left: 50px;
+		left: 15px;
 	}
 
 	#activites:hover
@@ -178,10 +176,17 @@
 
 	/* populaires */
 
+	#aside1
+	{
+		max-width: auto;
+		border-radius: 0px;
+	}
+
 	#hotels2
 	{
 		flex-direction: column;
 		flex-wrap: wrap;
+		max-width: 480px;
 	}
 
 	.hotels_populaires
