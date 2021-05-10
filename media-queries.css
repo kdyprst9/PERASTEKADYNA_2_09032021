@@ -1,16 +1,48 @@
+@media (min-width: 481px) and (max-width: 1024px)
+{
+	#section
+	{
+		flex-direction: column-reverse;
+	}
+
+	#aside1
+	{
+		margin-left: 0px;
+		margin-bottom: 30px;
+		height: auto;
+	}
+
+	#hotels2
+	{
+		justify-content: center;
+	}
+
+	.hotels_populaires
+	{
+		margin: 5px 10px 30px 20px;
+	}
+	
+}
+
 @media screen and (max-device-width : 480px)	
 {
+
+	html , body 
+	{
+		max-width: 480px;
+		margin: 0px;
+	}
 	/* page wrapper */
 	#bloc_page 
 	{
-		max-width: 480px;
-		justify-content: center;	
+		width: 480px;
+		height: auto;
+		margin: 0;	
 	}
 	
 	h1 , h2
 	{
 		font-size: 23px;
-		font-weight: bold;
 	}
 	
 	p
@@ -20,22 +52,15 @@
 
 	h4 
 	{
-		font-size: 15px ;
+		font-size: 17px ;
 	}
 
-	/* header */
-	header 
-	{
-		display: flex;
-		justify-content: center;
-		max-width: 480px;
-	}
+	
 	
 	#logo
 	{
 		width: 100px;
-		position: relative;
-		left: 60px;
+		left: 20px;
 		bottom: 84px;
 		
 	}
@@ -58,24 +83,24 @@
 	}
 
 	#hebergements {
-		border-bottom: 2px solid #0065FC;
+		border-bottom: 2.5px solid #0065FC;
 		padding-bottom:15px;
 		padding-right: 70px;
 		padding-left: 55px;
 		position: relative;
-		right: 225px;
+		right: 240px;
 		top: 78px;
 	}
 
 	#activites
 	{
-		border-bottom: 2px solid #F2F2F2;
+		border-bottom: 2.5px solid #F2F2F2;
 		padding-bottom: 15px;
 		padding-right: 85px;
 		padding-left: 80px;
 		position: relative;
 		top: 58px;
-		left: 15px;
+		left: 5px;
 	}
 
 	#activites:hover
@@ -87,7 +112,7 @@
 	#inscription
 	{
 		position: relative;
-		left: 150px;
+		left: 130px;
 		bottom: 25px;
 	}
 
@@ -97,6 +122,16 @@
 	}
 
 	/* Recherche et filtres */
+
+	#titre1 , #titre1 + p , #bloc_form , #info
+	{
+		padding-left: 10px;
+	}
+	
+	/* #formulaire1
+	{
+		 text-align: center; 
+	}*/
 
 	#map {
 		width: 23px;
@@ -120,16 +155,10 @@
 	
 	#loupe 
 	{
-		color: white;
 		position: relative;
 		left: 292px;
 		bottom: 40px;
 		font-size: 18px;
-	}
-
-	#search:hover
-	{
-		color: #DEEBFF;
 	}
 	
 	input:nth-child(2)
@@ -178,32 +207,36 @@
 
 	#aside1
 	{
-		max-width: auto;
 		border-radius: 0px;
+		margin-left: 0px;
 	}
 
-	#hotels2
+	#hotels2 
 	{
-		flex-direction: column;
-		flex-wrap: wrap;
-		max-width: 480px;
+		margin-left: -13px;
 	}
 
 	.hotels_populaires
 	{
-		min-width: 90%;
-		margin-bottom: 25px;
+		min-width: 80%;
+		height: 140px;
+		border-radius: 20px;
 	}
 
 	.hotels_populaires_img
 	{
-		width: 120px;
+		width: 150px;
+		height: 140px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
 	}
 
 	.bloc_hotels_populaires
 	{
-		width: 150px;
+		width: 170px;
+		margin: 5px 10px 0 0;
 	}
+
 
 	/* Herbergements */
 	#article1
@@ -211,18 +244,21 @@
 		background-color: white;
 		border: none;
 		height: auto;
-		max-width: 480px;
 	}
 
 	.hotels_hebergements
 	{
-		width: 90%;
+		width: 81%;
 		margin-bottom: 25px;
+		margin-left: 8px;
+		border-radius: 20px;
 	}
 
 	.hotels_hebergements_img
 	{
 		min-height: 120px;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
 	}
 
 	.hotels_hebergements p
@@ -230,7 +266,7 @@
 		margin-top: -15px;
 	}
 
-	.etoiles1
+	.etoiles1 , .etoiles2
 	{
 		font-size: 12px;
 		margin-top: -9px;
@@ -239,15 +275,20 @@
 	#afficher
 	{
 		font-size: 18px;
-		margin-left: 10px ;
+		margin-left: 20px ;
 	}
-
-
 	
 	/* activites */
 	#ActivityMars
 	{
 		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#Activités_titre
+	{
+		padding-left: 20px;
+		padding-bottom: 20px;
 	}
 
 	.ActivityMars_img 
@@ -257,37 +298,34 @@
 
 	.ActivityMars_grand
 	{
-		min-width: 90%;
+		min-width: 81%;
 		height: 200px;
 	}
 
 	.ActivityMars_petitbloc
 	{
-		width: 100%;
+		width: 90%;
 		margin-top: 35px;
-		margin-left: -17px;
+		margin-left: -20px;
 		margin-bottom: 35px;
 	}
+
 	.ActivityMars_petit
 	{
 		width: 90%;
 		height: 200px;
 	}
 
-	#Calanques
+	#Calanques 
 	{
-		margin-left: 0px;
+		margin-left: -4px;
 	}
 
 	/* footer */
 	#Footer
 	{
-		display: flex;
 		flex-direction: column;
-		max-width:480px ;
-		height: auto;
 		padding-bottom: 50px;
-		
 	}
 
 	#Footer p
@@ -300,213 +338,13 @@
 	{
 		font-size: 17.5px;
 		margin-bottom: 0px;
-	
 	}
 
 	.Footer_bloc
 	{
 		margin-bottom: 20px;
+		margin-left: 50px;
 		width: auto;
-	}
-
-}
-
-@media (min-width: 480px) and (max-width: 767px)
-{
-	/* page wrapper */
-	#bloc_page 
-	{
-		width: auto;
-	}
-
-	/* Recherche et filtres */
-
-	.filtres
-	{
-		margin-right: 5px;
-	}
-
-	.filtres:nth-child(9)
-	{
-		display: flex;
-		padding-top: 7px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	
-	#formul i:nth-child(8)
-	{
-		display: flex;
-		margin-top: 11px;
-	}
-
-	/* populaires */
-
-	#hotels2 {
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-
-	.hotels_populaires 
-	{
-		width: 40%;
-	}
-
-	/* activites */
-
-	#ActivityMars
-	{
-		margin-top: 30px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
-
-	.ActivityMars_grand
-	{
-		max-width: 40%;
-	}
-
-	.ActivityMars_petitbloc
-	{
-		width: 50%;
-	}
-
-	#Calanques
-	{
-		margin-top: 35px;
-		margin-left: 3px;
-	}
-
-	#NotreDame
-	{
-		margin-top: 35px;
-	}
-
-	/* footer */
-
-	#Footer p 
-	{
-		font-size: 10px;
-	}
-
-	#Footer h5 
-	{
-		font-size: 12px;
-	}
-
-}
-
-@media (max-width: 1024px)
-{
-
-/* page wrapper */
-
-	#bloc_page 
-	{
-		width: auto;
-		margin: auto;
-	}
-
-/* Recherche et filtres */
-
-	#label 
-	{
-		margin-right: 10px;
-	}
-
-	#formul i
-	{
-	width: 14px;
-	height: 14px;
-	}
-
-
-	.filtres
-	{		
-	margin-right: 5px;
-	}
-
-/* Herbergements */
-
-	#article1
-	{
-		height: 100%;
-		width: 100%;
-	}
-
-	.hotels_hebergements_img
-	{
-		height: 110px;
-	}
-
-	.hotels_hebergements
-	{
-		height: 190px;
-	}
-
-
-/* populaires */
-
-	#aside1
-	{
-		margin-top: 10px;
-		margin-bottom: 20px;
-		padding-left: 15px;
-		margin-left: 0px;
-		padding-bottom: 30px;
-		min-width: 90%;	
-	}
-
-	#hotels2
-	{
-		flex-direction: row;
-		justify-content: center;
-	}
-
-	#hotels2 p
-	{
-		margin-bottom: -15px;
-	}
-
-	#populaires
-	{
-		margin-left: 10px;
-	}
-
-	.hotels_populaires
-	{
-		height: 120px;
-		margin-right: 20px;
-		margin-top: 10px;
-	}
-
-	#hotels2 img 
-	{
-		height: 120px;
-	}
-
-/* activites */
-	#ActivityMars
-	{
-		margin-bottom: 30px;
-		margin-top: 30px;
-		justify-content: center;
-	}
-
-	.ActivityMars_petit
-	{
-		margin-right: 0px;
-	}
-
-/* footer */
-
-	#Footer
-	{	
-		max-width: 960px;
-		margin: auto;
-		height: auto;
-		padding-bottom: 30px;
 	}
 
 }
