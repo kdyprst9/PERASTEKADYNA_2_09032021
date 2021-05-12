@@ -9,7 +9,7 @@
 	{
 		margin-left: 0px;
 		margin-bottom: 30px;
-		height: auto;
+		padding-bottom: 40px;
 	}
 
 	#hotels2
@@ -19,62 +19,60 @@
 
 	.hotels_populaires
 	{
-		margin: 5px 10px 30px 20px;
+		margin: 10px 10px 0px 10px;
 	}
-	
 }
 
-@media screen and (max-device-width : 480px)	
+
+
+@media screen and (max-device-width: 480px)
 {
 
-	html , body 
+	html , body
 	{
 		max-width: 480px;
-		margin: 0px;
+		margin: 0;
 	}
 	/* page wrapper */
-	#bloc_page 
+	#bloc_page
 	{
 		width: 480px;
 		height: auto;
-		margin: 0;	
+		margin: 0;
 	}
-	
+
 	h1 , h2
 	{
 		font-size: 23px;
 	}
-	
+
 	p
 	{
 		font-size: 15px;
 	}
 
-	h4 
+	h4
 	{
 		font-size: 17px ;
 	}
 
-	
-	
 	#logo
 	{
 		width: 100px;
 		left: 20px;
 		bottom: 84px;
-		
 	}
-	
+
 	#nav ul {
 		flex-wrap: wrap;
 		margin-bottom: 70px;
 	}
 
-	#nav a:hover 
+	#nav a:hover
 	{
 		border-top: none;
 	}
-	
+
 	.nav_liste
 	{
 		margin-left: 50px;
@@ -127,10 +125,10 @@
 	{
 		padding-left: 10px;
 	}
-	
+
 	/* #formulaire1
 	{
-		 text-align: center; 
+		 text-align: center;
 	}*/
 
 	#map {
@@ -142,25 +140,25 @@
 		padding-top: 5px;
 		top: -0.2px;
 	}
-	
-	#search 
+
+	#search
 	{
 		width: 49px;
 		height: 48px;
 		font-size: 0;
 		border-radius: 11px;
 		top: -6px;
-		left: 227px;	
+		left: 227px;
 	}
-	
-	#loupe 
+
+	#loupe
 	{
 		position: relative;
 		left: 292px;
 		bottom: 40px;
 		font-size: 18px;
 	}
-	
+
 	input:nth-child(2)
 	{
 		width: 220px;
@@ -196,7 +194,7 @@
 		display: flex;
 		margin-top: 11px;
 	}
-	
+
 	#formul i
 	{
 		border: 12px solid #DEEBFF;
@@ -205,22 +203,23 @@
 
 	/* populaires */
 
-	#aside1
+	#hotels2
 	{
-		border-radius: 0px;
-		margin-left: 0px;
+		width: 480px;
 	}
 
-	#hotels2 
+	#aside1
 	{
-		margin-left: -13px;
+	border-radius: 0px;
+	margin-left: 0px;
 	}
 
 	.hotels_populaires
 	{
-		min-width: 80%;
+		width: 100%;
 		height: 140px;
 		border-radius: 20px;
+		margin: 25px;
 	}
 
 	.hotels_populaires_img
@@ -233,10 +232,9 @@
 
 	.bloc_hotels_populaires
 	{
-		width: 170px;
+		min-width: 170px;
 		margin: 5px 10px 0 0;
 	}
-
 
 	/* Herbergements */
 	#article1
@@ -248,10 +246,9 @@
 
 	.hotels_hebergements
 	{
-		width: 81%;
-		margin-bottom: 25px;
-		margin-left: 8px;
+		width: 100%;
 		border-radius: 20px;
+		margin: 25px;
 	}
 
 	.hotels_hebergements_img
@@ -263,13 +260,13 @@
 
 	.hotels_hebergements p
 	{
-		margin-top: -15px;
+		margin-top: -18px;
 	}
 
 	.etoiles1 , .etoiles2
 	{
-		font-size: 12px;
 		margin-top: -9px;
+		font-size: 12px;
 	}
 
 	#afficher
@@ -277,12 +274,13 @@
 		font-size: 18px;
 		margin-left: 20px ;
 	}
-	
+
 	/* activites */
 	#ActivityMars
 	{
 		flex-wrap: wrap;
 		justify-content: center;
+		width: 100%;
 	}
 
 	#Activités_titre
@@ -291,34 +289,32 @@
 		padding-bottom: 20px;
 	}
 
-	.ActivityMars_img 
+	.ActivityMars_img
 	{
 		height: 150px;
 	}
 
-	.ActivityMars_grand
+	.ActivityMars_grand , .ActivityMars_petit
 	{
-		min-width: 81%;
+		min-width: 90%;
 		height: 200px;
-	}
-
-	.ActivityMars_petitbloc
-	{
-		width: 90%;
-		margin-top: 35px;
-		margin-left: -20px;
-		margin-bottom: 35px;
 	}
 
 	.ActivityMars_petit
 	{
-		width: 90%;
-		height: 200px;
+		margin: 0;
 	}
 
-	#Calanques 
+	 .ActivityMars_petitbloc
 	{
-		margin-left: -4px;
+		width: 90%;
+		margin-top: 35px;
+		margin-bottom: 35px; 
+	}
+
+	#Calanques
+	{
+		margin-left: 0;
 	}
 
 	/* footer */
@@ -334,7 +330,7 @@
 		margin-bottom: -5px;
 	}
 
-	#Footer h5 
+	#Footer h5
 	{
 		font-size: 17.5px;
 		margin-bottom: 0px;
