@@ -9,7 +9,7 @@
 	{
 		margin-left: 0px;
 		margin-bottom: 30px;
-		padding-bottom: 40px;
+		height: auto;
 	}
 
 	#hotels2
@@ -19,151 +19,151 @@
 
 	.hotels_populaires
 	{
-		margin: 10px 10px 0px 10px;
+		margin: 5px 10px 30px 20px;
 	}
+	
 }
 
-
-
-@media screen and (max-device-width: 480px)
+@media (max-width: 880px)
 {
-
-	html , body
+	#ActivityMars
 	{
-		max-width: 480px;
-		margin: 0;
+		flex-wrap: wrap;
+		justify-content: center;
 	}
+
+	#Activites_titre
+	{
+		padding-left: 20px;
+		padding-bottom: 20px;
+	}
+
+	.ActivityMars_img 
+	{
+		height: 150px;
+	}
+
+	.ActivityMars_grand
+	{
+		min-width: 81%;
+		height: 200px;
+	}
+
+	.ActivityMars_petitbloc
+	{
+		width: 90%;
+		margin-top: 35px;
+		margin-bottom: 35px;
+	}
+
+	.ActivityMars_petit
+	{
+		width: 90%;
+		height: 200px;
+		margin-right: 0;
+	}
+
+	#Calanques 
+	{
+		margin-left: -4px;
+	} 
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+	html , body 
+	{
+		margin: 0px;
+	}
+
+	#section
+	{
+		flex-direction: column-reverse;
+	}
+
+	#bloc_page {
+		width: 100%;
+		max-width: unset;
+		padding: 0;
+	}
+
+	/* HEADER */
+	#header-pc {
+		display: none;
+	}
+
+	#header-mobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header-mobile-row {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.header-mobile-row div {
+		flex: 1;
+		height: 60px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.header-mobile-row div a {
+		color: #0065FC
+	}
+
+	#inscription-mobile a {
+		font-weight: bold;
+	}
+
+	#activite-mobile a {
+		color: grey;
+	}
+
+	#activite-mobile
+	{
+		border-bottom: inset 2px lightgrey;
+	}
+
+	#hebergement-mobile {
+		border-bottom: inset 2px #0065FC
+	}
+
+
+	#logo-mobile img {
+		width: 60%;
+	}
+
 	/* page wrapper */
-	#bloc_page
-	{
-		width: 480px;
-		height: auto;
-		margin: 0;
-	}
-
+	
 	h1 , h2
 	{
 		font-size: 23px;
 	}
-
+	
 	p
 	{
 		font-size: 15px;
 	}
 
-	h4
+	h4 
 	{
 		font-size: 17px ;
 	}
 
-	#logo
-	{
-		width: 100px;
-		left: 20px;
-		bottom: 84px;
-	}
-
-	#nav ul {
-		flex-wrap: wrap;
-		margin-bottom: 70px;
-	}
-
-	#nav a:hover
-	{
-		border-top: none;
-	}
-
-	.nav_liste
-	{
-		margin-left: 50px;
-		margin-right: 20px;
-		font-size: 17px;
-	}
-
-	#hebergements {
-		border-bottom: 2.5px solid #0065FC;
-		padding-bottom:15px;
-		padding-right: 70px;
-		padding-left: 55px;
-		position: relative;
-		right: 240px;
-		top: 78px;
-	}
-
-	#activites
-	{
-		border-bottom: 2.5px solid #F2F2F2;
-		padding-bottom: 15px;
-		padding-right: 85px;
-		padding-left: 80px;
-		position: relative;
-		top: 58px;
-		left: 5px;
-	}
-
-	#activites:hover
-	{
-		border-top: none;
-		border-color: #0065FC;
-	}
-
-	#inscription
-	{
-		position: relative;
-		left: 130px;
-		bottom: 25px;
-	}
-
-	#inscription:hover
-	{
-		border-top: none;
-	}
-
 	/* Recherche et filtres */
-
-	#titre1 , #titre1 + p , #bloc_form , #info
-	{
-		padding-left: 10px;
+	#search-container {
+		padding: 0px 20px;
 	}
 
-	/* #formulaire1
+	#input-search 
 	{
-		 text-align: center;
-	}*/
-
-	#map {
-		width: 23px;
-		height: 20px;
-		border-top-left-radius: 15px;
-		border-bottom-left-radius: 15px;
-		font-size: 16px;
-		padding-top: 5px;
-		top: -0.2px;
-	}
-
-	#search
-	{
-		width: 49px;
-		height: 48px;
-		font-size: 0;
-		border-radius: 11px;
-		top: -6px;
-		left: 227px;
-	}
-
-	#loupe
-	{
-		position: relative;
-		left: 292px;
-		bottom: 40px;
-		font-size: 18px;
-	}
-
-	input:nth-child(2)
-	{
-		width: 220px;
-		height: 43px;
-		font-size: 15px;
+		width: 100%;
+		min-width: unset;
 	}
 
 	#label
@@ -171,70 +171,49 @@
 		display: flex;
 		font-size: 16px;
 		margin-bottom: 15px;
-		margin-top: -20px;
 	}
 
-	.filtres
-	{
-		font-size: 15px;
-		height: 40px;
-		padding-left: 43px;
-	}
-
-	.filtres:nth-child(7)
-	{
-		display: flex;
-		padding-top: 10px;
+	#formul {
 		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-
-	#formul i:nth-child(6)
-	{
 		display: flex;
-		margin-top: 11px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: unset;
 	}
 
-	#formul i
-	{
-		border: 12px solid #DEEBFF;
-		font-size: 15px;
+	.filtres {
+		margin-left: unset;
 	}
 
 	/* populaires */
-
-	#hotels2
-	{
-		width: 480px;
-	}
-
 	#aside1
 	{
-	border-radius: 0px;
-	margin-left: 0px;
+		border-radius: 0px;
+		margin-left: 0px;
+		padding-bottom: 30px;
 	}
 
 	.hotels_populaires
 	{
-		width: 100%;
-		height: 140px;
+		width: 80%;
+		height: 150px;
 		border-radius: 20px;
-		margin: 25px;
 	}
 
 	.hotels_populaires_img
 	{
-		width: 150px;
-		height: 140px;
+		height: 100%;
 		border-top-left-radius: 20px;
 		border-bottom-left-radius: 20px;
 	}
 
 	.bloc_hotels_populaires
 	{
-		min-width: 170px;
+		width: 170px;
 		margin: 5px 10px 0 0;
+		padding: 0px 0px 10px 0px;
 	}
+
 
 	/* Herbergements */
 	#article1
@@ -246,9 +225,11 @@
 
 	.hotels_hebergements
 	{
-		width: 100%;
+		width: 80%;
+		margin-bottom: 25px;
+		margin-left: 8px;
 		border-radius: 20px;
-		margin: 25px;
+		padding-bottom: 15px;
 	}
 
 	.hotels_hebergements_img
@@ -260,13 +241,13 @@
 
 	.hotels_hebergements p
 	{
-		margin-top: -18px;
+		margin-top: -15px;
 	}
 
 	.etoiles1 , .etoiles2
 	{
-		margin-top: -9px;
 		font-size: 12px;
+		margin-top: -9px;
 	}
 
 	#afficher
@@ -274,47 +255,16 @@
 		font-size: 18px;
 		margin-left: 20px ;
 	}
-
+	
 	/* activites */
-	#ActivityMars
+	.ActivityMars_petitbloc
 	{
-		flex-wrap: wrap;
-		justify-content: center;
-		width: 100%;
+		margin-left: -20px;
 	}
 
-	#Activités_titre
+	.ActivityMars_grand
 	{
-		padding-left: 20px;
-		padding-bottom: 20px;
-	}
-
-	.ActivityMars_img
-	{
-		height: 150px;
-	}
-
-	.ActivityMars_grand , .ActivityMars_petit
-	{
-		min-width: 90%;
-		height: 200px;
-	}
-
-	.ActivityMars_petit
-	{
-		margin: 0;
-	}
-
-	 .ActivityMars_petitbloc
-	{
-		width: 90%;
-		margin-top: 35px;
-		margin-bottom: 35px; 
-	}
-
-	#Calanques
-	{
-		margin-left: 0;
+		min-width: 81%;
 	}
 
 	/* footer */
@@ -330,7 +280,7 @@
 		margin-bottom: -5px;
 	}
 
-	#Footer h5
+	#Footer h5 
 	{
 		font-size: 17.5px;
 		margin-bottom: 0px;
@@ -342,5 +292,4 @@
 		margin-left: 50px;
 		width: auto;
 	}
-
 }
