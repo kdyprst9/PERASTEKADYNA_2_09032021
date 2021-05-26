@@ -160,10 +160,40 @@
 		padding: 0px 20px;
 	}
 
+	#map 
+	{
+		width: 70px;
+		height: 47px;
+		font-size: 17px;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+	}
+
 	#input-search 
 	{
 		width: 100%;
 		min-width: unset;
+		height: 45px;
+		font-size: 16px;
+		padding-left: 10px;
+	}
+
+	#search span 
+	{
+		display: none;
+	}
+
+	#search
+	{
+		border-radius: 15px;
+		width: 70px;
+		height: 50px;
+	}
+
+	#loupe
+	{
+		display: flex;
+		font-size: 15px;
 	}
 
 	#label
@@ -183,9 +213,32 @@
 
 	.filtres {
 		margin-left: unset;
+		margin-right: 15px;
+		margin-top: 0px;
+		margin-bottom: 12px;
+		height: 50px
+	}
+
+	span.i-container
+	{
+		width: 30px;
+		height: 30px;
+		font-size: 17px;
+	}
+
+	#info i
+	{
+		width: 15px;
+		height: 15px;
+		font-size: 12px;
 	}
 
 	/* populaires */
+
+	h2 + i 
+	{
+		font-size: 20px;
+	}
 	#aside1
 	{
 		border-radius: 0px;
@@ -202,16 +255,17 @@
 
 	.hotels_populaires_img
 	{
+		width: 135px;
 		height: 100%;
-		border-top-left-radius: 20px;
-		border-bottom-left-radius: 20px;
+		border-top-left-radius: 17px;
+		border-bottom-left-radius: 17px;
 	}
 
 	.bloc_hotels_populaires
 	{
 		width: 170px;
 		margin: 5px 10px 0 0;
-		padding: 0px 0px 10px 0px;
+		padding: 0px 0px 10px 5px;
 	}
 
 
