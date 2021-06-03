@@ -61,38 +61,31 @@ a
 
 /* header */
 
-#header-pc {
+header {
 	display: flex;
 	justify-content: space-between;
-	height: 60px;
 }
-
-#header-mobile {
-	display: none;
-}
-
+	
 #logo {
 	flex:1;
 	display: flex;
 }
-
+	
 #logo img {
 	width: 80px;
 	align-self: center;
 }
-
-#nav 
-{
+	
+#nav {
 	display: flex;
 	justify-content: flex-end;
 	min-width: 30%;
 }
-
-#nav a 
-{
+	
+#nav a {
 	text-decoration: none;
 }
-
+	
 #nav ul {
 	margin: 0;
 	padding: 0;
@@ -102,9 +95,9 @@ a
 	justify-content: flex-end;
 	width: 100%;
 }
-
+	
 .nav_liste
-{
+	{
 	flex: 1;
 	font-size: 13px;
 	height: 100%;
@@ -113,39 +106,46 @@ a
 	justify-content: center;
 	min-width: 100px;
 }
-
+	
 .nav_link {
 	align-self: center;
 }
-
+	
+#btn-inscription {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: unset;
+}
+	
 #inscription
-{
+	{
 	font-weight: bold;
 	color: #0065FC;
 }
-
+	
 #activites
-{
+	{
 	color: grey;
 }
-
+	
 #activites:hover
-{
+	{
 	color: #0065FC;
 }
-
-#hebergements
-{
+	
+#hebergements {
 	border-top: inset 2px #0065FC;
 }
-
+	
 #hebergements a {
 	color: #0065FC;
 }
-
+	
 #search-container {
 	display: flex;
 	flex-direction: column;
+	margin-top: 20px;
 }
 
 /* Recherche et filtres */

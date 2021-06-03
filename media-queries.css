@@ -90,53 +90,40 @@
 	}
 
 	/* HEADER */
-	#header-pc {
-		display: none;
-	}
 
-	#header-mobile {
+	header {
 		display: flex;
 		flex-direction: column;
 	}
-
-	.header-mobile-row {
-		display: flex;
-		flex-direction: row;
+		
+	#logo {
+		padding: 10px 20px 0px 20px;
 	}
-
-	.header-mobile-row div {
-		flex: 1;
+		
+	header nav ul {
 		height: 60px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	}
+		
+	#btn-inscription {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+	}
+		
+	#hebergements {
+		border-bottom: inset 2px #0065FC;
+		border-top: unset;
 	}
 
-	.header-mobile-row div a {
-		color: #0065FC
+	.nav_liste {
+		font-size: 15px;
 	}
 
-	#inscription-mobile a {
-		font-weight: bold;
+	.nav_liste:nth-child(2) {
+		border-bottom: inset 2px #F2F2F2;
 	}
 
-	#activite-mobile a {
-		color: grey;
-	}
-
-	#activite-mobile
-	{
-		border-bottom: inset 2px lightgrey;
-	}
-
-	#hebergement-mobile {
-		border-bottom: inset 2px #0065FC
-	}
-
-
-	#logo-mobile img {
-		width: 60%;
-	}
+	
 
 	/* page wrapper */
 	
